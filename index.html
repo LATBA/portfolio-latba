@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta type="description" content="ci est mon premier PORTFOLIO">
+    <link href="css/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title >MON PORTFOLIO</title>
+    <style> body { padding-top: 4rem;}
+    .dark .bg-gray-800 { background-color: #c1c6ce; }
+   .dark .text-gray-300 { color: #3a0cdf; } 
+   .dark .hover\:text-white:hover { color: #edf2f7; } 
+    </style>
+</head>
+
+<body>
+  <div id="welcome-container"></div>
+  <nav class="bg-gray-800 text-blue-500 fixed top-0 left-0 w-full z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex-shrink-0">
+        <img src="images/MOUCTAR BÂ.png" alt="Logo" class="h-10">
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <a href="tel:+221779603653" class="hover:text-gray-300">
+          <i class="fas fa-phone-alt"></i>+221 779603653
+      </a>
+      <a href="https://docs.google.com/document/d/14q3GO2zX_EtP8GfvSp8a6sPnKjcWUHtg_TVm-xNqziY/edit?usp=drivesdk" class="hover:text-gray-300">
+          <i class="fas fa-file-alt"></i> CV
+      </a>
+      <a href="https://drive.google.com/drive/folders/1EqA8j1aqngA3foMX9JjlwD3KZ80Nv35H" class="hover:text-gray-300">
+          <i class="fas fa-certificate"></i> Certificat
+      </a>
+      <a href="https://wa.me/221779603653" target="_blank" class="hover:text-gray-300">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.facebook.com/latba" target="_blank" class="hover:text-gray-300">
+          <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mouctaba.mb@gmail.com&su=Demande de contact&body=Bonjour," target="_blank" class="hover:text-gray-300">
+          <i class="fas fa-envelope"></i> Email
+      </a>    
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="hidden md:block">LATBA</span>
+        <div class="flex-shrink-0">
+          <img src="images/Latba.jpg" alt="Profil" class="h-10 w-10 rounded-full border-2 border-white hover:scale-110 transition-all duration-300 ease-in-out">
+        </div>
+        <button id="mode-toggle" class="text-gray-300 focus:outline-none hover:text-gray-500">
+          Mode Sombre
+        </button>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label="Ouvrir le menu mobile" title="Ouvrir le menu mobile">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>     
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-blue-500">
+       <a href="+221 779603653" class="block px-4 py-2 text-sm text-blue-500 hover:bg-gray-700 hover:text-white">Téléphone:+221 779603653</a> 
+       <a href="#https://docs.google.com/document/d/14q3GO2zX_EtP8GfvSp8a6sPnKjcWUHtg_TVm-xNqziY/edit?usp=drivesdk" class="block px-4 py-2 text-sm text-blue-500 hover:bg-gray-700 hover:text-white">CV</a> 
+       <a href="#https://drive.google.com/drive/folders/1EqA8j1aqngA3foMX9JjlwD3KZ80Nv35H" class="block px-4 py-2 text-sm text-blue-500 hover:bg-gray-700 hover:text-white">Certificat</a> 
+       <a href="#https://wa.me/221779603653" class="block px-4 py-2 text-sm text-blue-500 hover:bg-gray-700 hover:text-white">WhatsApp</a> 
+       <a href="#https://www.facebook.com/latba" class="block px-4 py-2 text-sm text-blue-500 hover:bg-gray-700 hover:text-white">Facebook</a> 
+       <a href="#https://mail.google.com/mail/?view=cm&fs=1&to=mouctaba.mb@gmail.com&su=Demande de contact&body=Bonjour," class="block px-4 py-2 text-sm text-blue-500 hover:bg-gray-700 hover:text-white">Email</a>
+      </div>
+  </nav>
+  
+  <style>
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  
+    bodyb{
+      background: linear-gradient(270deg, #5d00f3, #fcac00, #f20505, #2df700);
+      background-size: 600% 600%;
+      animation: backgroundAnimation 15s ease infinite;
+    }
+  </style>
+  
+        <div class="slider">
+        <img src="images/latba pst.png" alt="image" class="slider-background brightness-75 hover:brightness-150">
+        <div class="slider-content text-blue-400">
+            <h1 class="text-3xl">MOUCTAR BA </h1>
+            <p>Je suis developpeur</p>
+        </div>
+        <div class="section">
+         <div class="text-5xl text-center font-bold mb-6 text-blue-700"><u>Mes competances</u></div>
+         <h2 class="text-3xl font-bold mb-6  text-blue-700">1-En Développement Web</h2>
+        <div class="boxed">
+        <div class="flex">
+        <div class="w40">
+        </div>
+        <div class="w60 bg-white text-black text-right text-2xl">
+       . Passionné par le développement web, je maîtrise plusieurs technologies essentielles pour créer des sites modernes.<br>
+
+         - HTML : Je crée la structure de base des sites en utilisant HTML5, garantissant ainsi une architecture solide et accessible.<br>
+          
+         - CSS : Avec CSS3, j'ajoute du style et du design à mes projets pour offrir une expérience utilisateur attrayante et cohérente.<br>
+          
+          -Tailwind CSS : Grâce à ce framework CSS, je conçois des interfaces en maintenant une flexibilité dans le design.<br>
+          
+          -JavaScript : J’utilise JavaScript pour rendre les sites dynamiques et interactifs, offrant aux utilisateurs une navigation fluide.<br>
+              </div>
+                    </div>
+                    <div class="bg-black p-4">
+                    <div class="flex flex-row gap-8 justify-center items-center mt-12">
+                      <div class="w-1/4 skill text-center ">
+                          <img src="images/html5.jpg" alt="HTML" class="w-40 h-40 object-cover border-4 border-white rounded-lg animate-bounce ease-in-out brightness-75 hover:brightness-150">
+                      </div>
+                      <div class="w-1/4 skill text-center">
+                          <img src="images/css.jpeg" alt="CSS" class="w-40 h-40 object-cover  border-4 border-white rounded-lg animate-bounce ease-in-out brightness-75 hover:brightness-150">
+                      </div>
+                        <div class="w-1/4 skill text-center">
+                            <img src="images/twc.png" alt="HTML" class="w-40 h-40 object-cover  border-4 border-white rounded-lg animate-bounce ease-in-out brightness-75 hover:brightness-150">
+                        </div>
+                        <div class="w-1/4 skill text-center">
+                          <img src="images/js.jpeg" alt="HTML" class="w-40 h-40 object-cover  border-4 border-white rounded-lg animate-bounce ease-in-out brightness-75 hover:brightness-150">
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <section id="applications" class="mt-12">
+                  <h2 class="text-3xl font-bold mb-6  text-blue-700">1-En Développement d'Applications</h2>
+                  <div class="text-right text-3xl font-medium text-gray-800 shadow-lg">
+                    <h3>-Je suis en constante auto-formation dans le domaine du développement d'applications, ce qui me permet de rester à jour avec les dernières technologies et pratiques.</h3>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-black shadow-md rounded-lg p-6">
+                      <h3 class="text-2xl font-semibold mb-4 text-white">Ionic Framework</h3>
+                      <p  class="text-white">Ionic Framework : J'exploite Ionic pour créer des applications hybrides performantes, permettant de toucher un large public sur iOS et Android.</p>
+                      <img src="images/ionic.png" alt="Ionic Project" class="w-full h-80 mt-4 rounded-lg water-wave">
+                    </div>
+                    <div class="bg-black shadow-md rounded-lg p-6">
+                      <h3 class="text-2xl font-semibold mb-4  text-white">Angular</h3>
+                      <p  class="text-white">Angular : Ma maîtrise d’Angular me permet de concevoir des applications web dynamiques et évolutives, adaptées aux besoins des utilisateurs. </p>
+                      <img src="images/angular.jpg" alt="Ionic Project" class="w-full h-80 mt-4 rounded-lg water-wave">
+                    </div>
+                    <div class="bg-black shadow-md rounded-lg p-6">
+                      <h3 class="text-2xl font-semibold mb-4  text-white">Typescript</h3>
+                      <p class="text-white">TypeScript : En intégrant TypeScript dans mes projets, j'assure une meilleure structure et lisibilité de mon code, garantissant ainsi un développement efficace.</p>
+                      <img src="images/typescript.png" alt="Capacitor Project" class="w-full h-80 mt-4 rounded-lg water-wave">
+                    </div>
+                  </div>
+                </section> 
+                 <section id="competences" class="container mx-auto px-4 py-12">
+                  <h2 class="text-blue-500 text-4xl font-semibold">1-En wordpress</h2>
+                  <p class=" mb-8 text-center font-semibold text-gray-700 text-2xl">-Fort de ma passion pour le développement web, je maîtrise diverses technologies clés qui me permettent de créer des sites modernes, interactifs et performants. J'utilise également Elementor Pro pour concevoir des pages web attrayantes et fonctionnelles.</p>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center">
+                    <div class="bg-black rounded-lg shadow-md p-4 transition transform hover:-translate-y-2 hover:shadow-lg w-full sm:w-full">
+                      <img src="images/wordpress-2815925_1280.jpg" alt="WordPress" class="w-3/4 h-auto mx-auto mb-4 rounded transition transform hover:scale-105">
+                      <h3 class="text-xl font-bold mb-2 text-red-500">WordPress</h3>
+                      <p class="text-gray-300 text-sm">Avec WordPress, je crée et personnalise des sites web dynamiques, en utilisant des thèmes et des plugins pour répondre aux besoins spécifiques des clients.</p>
+                    </div>
+                    <div class="bg-black rounded-lg shadow-md p-4 transition transform hover:-translate-y-2 hover:shadow-lg">
+                      <img src="images/canva.png" alt="Canva" class="w-3/4 h-auto mx-auto mb-4 rounded transition transform hover:scale-105">
+                      <h3 class="text-xl font-bold mb-2 text-green-500">Canva</h3>
+                      <p class="text-gray-300 text-sm">Canva est mon outil de prédilection pour créer des contenus visuels attrayants, tels que des bannières, des publications sur les réseaux sociaux et des présentations, afin d'améliorer l'attrait visuel des projets web et des campagnes marketing.</p>
+                    </div>
+                    <div class="bg-black rounded-lg shadow-md p-4 transition transform hover:-translate-y-2 hover:shadow-lg">
+                      <img src="images/woocommerce-logo.png" alt="WooCommerce" class="w-3/4 h-auto mx-auto mb-4 rounded transition transform hover:scale-105">
+                      <h3 class="text-xl font-bold mb-2 text-yellow-500">WooCommerce</h3>
+                      <p class="text-gray-300 text-sm">Pour les sites de commerce électronique, j'utilise WooCommerce pour créer des boutiques en ligne fonctionnelles et optimisées.</p>
+                    </div>
+                    <div class="bg-black rounded-lg shadow-md p-4 transition transform hover:-translate-y-2 hover:shadow-lg">
+                      <img src="images/Elementor-Logo-Full-Pink.png" alt="Elementor Pro" class="max-w-3/4 h-auto mx-auto mb-4 rounded transition transform hover:scale-105">
+                      <h3 class="text-xl font-bold mb-2 text-blue-500">Elementor Pro</h3>
+                      <p class="text-gray-300 text-sm">J'utilise Elementor Pro pour concevoir des pages web interactives et attrayantes avec des fonctionnalités avancées sans écrire de code.</p>
+                    </div>
+                  </div>
+                </section>
+                <section id="projects" class="container mx-auto px-4 py-12">
+                  <h2 class="text-blue-500 text-4xl font-semibold mb-6 text-center"><u>Projets Réalisés</u></h2>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      <div class="bg-black shadow-md rounded-lg p-6">
+                          <img src="images/p1.png" alt="Projet 1" class="w-full h-64 object-cover mb-4 rounded">
+                          <h3 class="text-2xl font-bold mb-2 text-blue-500">Projet 1:Site de Conciergerie</h3>
+                          <p class="text-gray-300 mb-2">Site de conciergerie développé en 2023; Ce projet inclut la gestion des réservations et un design intuitif.</p>
+                          <p class="text-gray-500 text-sm">Technologies utilisées :WordPress, Elementor</p>
+                          <a href="https://teranga-agency.com/" target="_blank" class="text-blue-500 hover:underline">Voir le projet</a>
+                      </div>
+                      <div class="bg-black shadow-md rounded-lg p-6">
+                          <img src="images/p2.png" alt="Projet 1" class="w-full h-64 object-cover mb-4 rounded">
+                          <h3 class="text-2xl font-bold mb-2 text-blue-500">Projet 2: Application Universitaire en local</h3>
+                          <p class="text-gray-300 mb-2"> Développement d'une application mobile dans le cadre universitaire.</p>
+                          <p class="text-gray-500 text-sm">Technologies utilisées : Ionic, Angular, TypeScript, Canva...</p>
+                          <a href="#" target="_blank" class="text-blue-500 hover:underline">Voir le projet</a>
+                      </div>
+                      <div class="bg-black shadow-md rounded-lg p-6">
+                        <img src="images/projet1.png" alt="Projet 1" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-500">Projet 3 en cours...</h3>
+                        <p class="text-gray-300 mb-2">Pas de description.</p>
+                        <p class="text-gray-500 text-sm">Technologies utilisées :non disponible</p>
+                        <a href="lien_vers_projet" target="_blank" class="text-blue-500 hover:underline">Voir le projet</a>
+                    </div>
+                  </div>
+              </section>
+              <footer class="bg-gray-800 text-blue-500 text-center py-4 mt-12">
+                <div class="flex justify-center items-center space-x-4">
+                    <img src="images/MOUCTAR BÂ.png" alt="Logo LATBA" class="h-8 w-auto">
+                    <p>FAIT PAR LATBA</p>
+                </div>
+            </footer>            
+                    </div>
+                  </div>
+                </div>                            
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>                        
+    <script src="js/script.js"></script>
+</body>
+</html>
